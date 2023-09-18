@@ -9,7 +9,7 @@ import { AiOutlineFileImage } from "react-icons/ai"
 import { BsEmojiHeartEyes } from "react-icons/bs"
 import postOperations from "@/graphql/operations/post";
 import  ObjectID  from 'bson-objectid';
-import { CreatePostArguments } from "@/../../../backend/src/util/types"
+import { CreatePostArguments } from "../../../util/types"
 import { GraphQLError } from "graphql";
 import { reloadSession } from "@/util/refreshSession";
 import { toast } from "react-hot-toast";

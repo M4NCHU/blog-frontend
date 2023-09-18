@@ -9,9 +9,21 @@ export interface CreateUsernameVariables {
     username: string
 }
 
+
+
 /**
  * Posts
  */
+
+
+export interface CreatePostArguments { 
+    id: string
+    authorId: string
+    title: string
+    desc: string
+    // image: string
+}
+
 
 export interface Post {
     id: string;
