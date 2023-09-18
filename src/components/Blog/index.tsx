@@ -22,7 +22,7 @@ interface BlogProps {
 
 const Blog:React.FC<BlogProps> = ({})  => {
     const {data: sessionData} = useSession()
-    const {data:postData, loading, error} = useQuery<PostsData, null>(postOperations.Query.readPosts)
+    const {data:postData, loading, error} = useQuery<PostsData>(postOperations.Query.readPosts)
     const content = postData?.readPosts
     
     const sortedPosts = content ? [...content].sort((a,b) => b.updatedAt.valueOf()-a.updatedAt.valueOf()) : [];
