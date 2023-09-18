@@ -13,7 +13,7 @@ import LikeOperations from "../../../graphql/operations/like"
 import { GraphQLError } from "graphql"
 import  ObjectID  from 'bson-objectid';
 import { Session } from "next-auth"
-import { SendLikeArguments } from "@/../../../backend/src/util/types"
+import { SendLikeArguments } from "../../../util/types"
 
 
 const formatRelativeLocale = {

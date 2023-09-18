@@ -9,7 +9,43 @@ export interface CreateUsernameVariables {
     username: string
 }
 
+export interface CreateUsernameResponse {
+    success?: boolean
+    error?: string
+}
 
+
+/**
+ * Post types
+ */
+
+export interface CreatePostArguments { 
+    id: string
+    authorId: string
+    title: string
+    desc: string
+    // image: string
+}
+
+/**
+ * Tags
+ */
+
+export interface CreateTagArguments {
+    id: string
+    tagName: string
+}
+
+
+/**
+ * Likes
+ */
+
+export interface SendLikeArguments {
+    id: string
+    userId: string
+    postId: string
+}
 
 /**
  * Posts
